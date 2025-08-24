@@ -23,7 +23,10 @@ import {
   Target,
   Globe,
   Lock,
-  Eye
+  Eye,
+  Mic,
+  MicOff,
+  Volume2
 } from 'lucide-react'
 
 function App() {
@@ -41,8 +44,53 @@ function App() {
   const [mlStatus, setMlStatus] = useState(null)
   const [showFeatures, setShowFeatures] = useState(true)
   const [activeTab, setActiveTab] = useState('chat')
+  const [isListening, setIsListening] = useState(false)
+  const [isSupported, setIsSupported] = useState(false)
   const messagesEndRef = useRef(null)
   const textareaRef = useRef(null)
+  const recognitionRef = useRef(null)
+
+  // Voice Recognition Setup
+  useEffect(() => {
+    if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+      setIsSupported(true)
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
+      recognitionRef.current = new SpeechRecognition()
+      recognitionRef.current.continuous = false
+      recognitionRef.current.interimResults = false
+      recognitionRef.current.lang = 'en-US'
+      
+      recognitionRef.current.onresult = (event) => {
+        const transcript = event.results[0][0].transcript
+        setInputValue(prev => prev + (prev ? ' ' : '') + transcript)
+        setIsListening(false)
+      }
+      
+      recognitionRef.current.onerror = (event) => {
+        console.error('Speech recognition error:', event.error)
+        setIsListening(false)
+      }
+      
+      recognitionRef.current.onend = () => {
+        setIsListening(false)
+      }
+    }
+  }, [])
+
+  const toggleListening = () => {
+    if (!isSupported) {
+      alert('Speech recognition is not supported in your browser. Please use Chrome, Edge, or Safari.')
+      return
+    }
+    
+    if (isListening) {
+      recognitionRef.current.stop()
+      setIsListening(false)
+    } else {
+      recognitionRef.current.start()
+      setIsListening(true)
+    }
+  }
 
   const examples = [
     {
@@ -80,6 +128,12 @@ function App() {
       description: "Someone is constantly calling and threatening me",
       icon: "🚨",
       category: "Harassment"
+    },
+    {
+      title: "🎤 Voice Input",
+      description: "Click the microphone button and speak naturally",
+      icon: "🎤",
+      category: "Voice Feature"
     }
   ]
 
@@ -95,6 +149,12 @@ function App() {
       title: "Smart Search",
       description: "Intelligent keyword matching across 32+ IPC sections",
       color: "from-blue-500 to-cyan-500"
+    },
+    {
+      icon: <Mic className="w-8 h-8" />,
+      title: "Voice Input",
+      description: "Speak naturally to describe incidents - voice-to-text conversion",
+      color: "from-green-500 to-emerald-500"
     },
     {
       icon: <Zap className="w-8 h-8" />,
@@ -487,18 +547,42 @@ function App() {
             {/* Chat Input */}
             <div className="p-6 bg-white/10 backdrop-blur-sm border-t border-white/20">
               <div className="flex gap-4 items-end">
-                <div className="flex-1">
+                <div className="flex-1 relative">
                   <textarea
                     ref={textareaRef}
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}
                     onKeyDown={handleKeyDown}
-                    placeholder="Describe the incident here... (e.g., Someone stole my bike)"
-                    className="w-full px-5 py-4 bg-white/90 backdrop-blur-sm border-2 border-white/30 rounded-2xl resize-none focus:outline-none focus:border-primary-500 focus:ring-4 focus:ring-primary-100 transition-all duration-300 placeholder-gray-500"
+                    placeholder="Describe the incident here... (e.g., Someone stole my bike) or use voice input"
+                    className="w-full px-5 py-4 pr-16 bg-white/90 backdrop-blur-sm border-2 border-white/30 rounded-2xl resize-none focus:outline-none focus:border-primary-500 focus:ring-4 focus:ring-primary-100 transition-all duration-300 placeholder-gray-500"
                     rows="2"
                     disabled={isLoading}
                   />
+                  
+                  {/* Voice Input Button */}
+                  <button
+                    onClick={toggleListening}
+                    disabled={isLoading || !isSupported}
+                    className={`absolute right-3 top-1/2 transform -translate-y-1/2 p-2 rounded-xl transition-all duration-300 ${
+                      isListening 
+                        ? 'bg-red-500 text-white animate-pulse shadow-lg' 
+                        : 'bg-primary-500 text-white hover:bg-primary-600 hover:transform hover:scale-110'
+                    } ${!isSupported ? 'opacity-50 cursor-not-allowed' : ''}`}
+                    title={isSupported ? (isListening ? 'Stop listening' : 'Start voice input') : 'Voice input not supported'}
+                  >
+                    {isListening ? (
+                      <MicOff className="w-4 h-4" />
+                    ) : (
+                      <Mic className="w-4 h-4" />
+                    )}
+                  </button>
+                  
+                  {/* Voice Status Indicator */}
+                  {isListening && (
+                    <div className="absolute -top-2 -right-2 w-6 h-6 bg-red-500 rounded-full animate-ping"></div>
+                  )}
                 </div>
+                
                 <button
                   onClick={sendMessage}
                   disabled={isLoading || !inputValue.trim()}
@@ -512,6 +596,21 @@ function App() {
                   Analyze
                 </button>
               </div>
+              
+              {/* Voice Input Status */}
+              {isListening && (
+                <div className="mt-3 flex items-center gap-2 text-primary-600 font-medium">
+                  <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+                  <span>Listening... Speak now</span>
+                </div>
+              )}
+              
+              {!isSupported && (
+                <div className="mt-3 flex items-center gap-2 text-yellow-600 text-sm">
+                  <AlertCircle className="w-4 h-4" />
+                  <span>Voice input not supported in this browser. Use Chrome, Edge, or Safari.</span>
+                </div>
+              )}
             </div>
           </div>
         )}

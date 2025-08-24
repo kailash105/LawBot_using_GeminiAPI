@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice-to-Text Test - IPC Crime Analyzer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        
+        .voice-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 20px 40px;
+            border-radius: 50px;
+            font-size: 1.2em;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 20px auto;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .voice-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .voice-button.listening {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .status {
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        
+        .status.listening {
+            background: #ffe6e6;
+            color: #d63031;
+            border: 2px solid #ff7675;
+        }
+        
+        .status.ready {
+            background: #e6ffe6;
+            color: #00b894;
+            border: 2px solid #55a3ff;
+        }
+        
+        .status.error {
+            background: #fff3cd;
+            color: #856404;
+            border: 2px solid #ffeaa7;
+        }
+        
+        .transcript {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            min-height: 100px;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        
+        .instructions {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .instructions h3 {
+            margin-top: 0;
+            color: #1976d2;
+        }
+        
+        .instructions ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        
+        .instructions li {
+            margin: 5px 0;
+        }
+        
+        .test-examples {
+            background: #f3e5f5;
+            border-left: 4px solid #9c27b0;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .test-examples h3 {
+            margin-top: 0;
+            color: #7b1fa2;
+        }
+        
+        .example-item {
+            background: white;
+            padding: 10px 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-left: 3px solid #9c27b0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .example-item:hover {
+            background: #f8f4ff;
+            transform: translateX(5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎤 Voice-to-Text Test</h1>
+        
+        <div class="instructions">
+            <h3>How to Use Voice Input:</h3>
+            <ul>
+                <li>Click the microphone button below</li>
+                <li>Allow microphone access when prompted</li>
+                <li>Speak clearly and naturally</li>
+                <li>Click again to stop recording</li>
+                <li>Your speech will be converted to text</li>
+            </ul>
+        </div>
+        
+        <div class="status" id="status">Ready to listen</div>
+        
+        <button class="voice-button" id="voiceButton" onclick="toggleListening()">
+            <span id="buttonIcon">🎤</span>
+            <span id="buttonText">Start Voice Input</span>
+        </button>
+        
+        <div class="transcript" id="transcript">
+            <strong>Your speech will appear here...</strong><br>
+            Try saying something like: "Someone stole my phone yesterday"
+        </div>
+        
+        <div class="test-examples">
+            <h3>Test Examples:</h3>
+            <div class="example-item" onclick="setExample('Someone stole my car from the parking lot')">
+                🚗 "Someone stole my car from the parking lot"
+            </div>
+            <div class="example-item" onclick="setExample('My neighbor hit me with a stick during an argument')">
+                👊 "My neighbor hit me with a stick during an argument"
+            </div>
+            <div class="example-item" onclick="setExample('Someone broke into my house and stole my jewelry')">
+                🏠 "Someone broke into my house and stole my jewelry"
+            </div>
+            <div class="example-item" onclick="setExample('A person threatened to kill me if I don\'t give them money')">
+                💰 "A person threatened to kill me if I don't give them money"
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let recognition;
+        let isListening = false;
+        
+        // Initialize speech recognition
+        function initSpeechRecognition() {
+            if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+                const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+                recognition = new SpeechRecognition();
+                recognition.continuous = false;
+                recognition.interimResults = false;
+                recognition.lang = 'en-US';
+                
+                recognition.onstart = function() {
+                    isListening = true;
+                    updateUI();
+                };
+                
+                recognition.onresult = function(event) {
+                    const transcript = event.results[0][0].transcript;
+                    document.getElementById('transcript').innerHTML = `<strong>You said:</strong><br>${transcript}`;
+                    isListening = false;
+                    updateUI();
+                };
+                
+                recognition.onerror = function(event) {
+                    console.error('Speech recognition error:', event.error);
+                    document.getElementById('status').textContent = `Error: ${event.error}`;
+                    document.getElementById('status').className = 'status error';
+                    isListening = false;
+                    updateUI();
+                };
+                
+                recognition.onend = function() {
+                    isListening = false;
+                    updateUI();
+                };
+                
+                return true;
+            } else {
+                document.getElementById('status').textContent = 'Speech recognition not supported in this browser';
+                document.getElementById('status').className = 'status error';
+                document.getElementById('voiceButton').disabled = true;
+                return false;
+            }
+        }
+        
+        function toggleListening() {
+            if (!recognition) {
+                if (!initSpeechRecognition()) {
+                    return;
+                }
+            }
+            
+            if (isListening) {
+                recognition.stop();
+            } else {
+                recognition.start();
+            }
+        }
+        
+        function updateUI() {
+            const button = document.getElementById('voiceButton');
+            const buttonIcon = document.getElementById('buttonIcon');
+            const buttonText = document.getElementById('buttonText');
+            const status = document.getElementById('status');
+            
+            if (isListening) {
+                button.className = 'voice-button listening';
+                buttonIcon.textContent = '🔴';
+                buttonText.textContent = 'Stop Listening';
+                status.textContent = 'Listening... Speak now!';
+                status.className = 'status listening';
+            } else {
+                button.className = 'voice-button';
+                buttonIcon.textContent = '🎤';
+                buttonText.textContent = 'Start Voice Input';
+                status.textContent = 'Ready to listen';
+                status.className = 'status ready';
+            }
+        }
+        
+        function setExample(text) {
+            document.getElementById('transcript').innerHTML = `<strong>Example:</strong><br>${text}`;
+        }
+        
+        // Initialize on page load
+        window.onload = function() {
+            initSpeechRecognition();
+        };
+    </script>
+</body>
+</html>
