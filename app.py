@@ -462,6 +462,7 @@ def get_status():
     if enhanced_ml_available:
         status_data["enhanced_system"]["total_sections"] = len(enhanced_ml_enhancer.ipc_sections)
         status_data["enhanced_system"]["expanded_sections"] = len(enhanced_ml_enhancer.expanded_sections)
+
     
     return jsonify(status_data)
 

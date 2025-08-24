@@ -34,7 +34,7 @@ function App() {
     {
       id: 1,
       type: 'bot',
-      content: "👋 Welcome to the Enhanced IPC Crime Analyzer! I'm your AI legal assistant powered by Gemini AI with 57+ IPC sections coverage. I can analyze incidents with 75-115% improved accuracy and provide intelligent legal summaries. You can describe incidents in plain language or use voice input. Try saying \"Someone stole my bike\" or \"My neighbor hit me with a stick.\""
+      content: "👋 Welcome to the Enhanced IPC Crime Analyzer! I'm your AI legal assistant powered by Gemini AI with 83 IPC sections coverage. I can analyze incidents with 75-115% improved accuracy and provide intelligent legal summaries. You can describe incidents in plain language or use voice input. Try saying \"Someone stole my bike\" or \"My neighbor hit me with a stick.\""
     }
   ])
   const [inputValue, setInputValue] = useState('')
@@ -189,7 +189,7 @@ function App() {
     {
       icon: <History className="w-8 h-8" />,
       title: "Comprehensive Coverage",
-      description: "57+ IPC sections covering all major criminal offences",
+      description: "83 IPC sections covering all major criminal offences",
       color: "from-indigo-500 to-purple-500"
     },
     {
@@ -201,7 +201,7 @@ function App() {
   ]
 
   const stats = [
-                { label: "IPC Sections", value: "57+", icon: <FileText className="w-5 h-5" /> },
+                { label: "IPC Sections", value: "83", icon: <FileText className="w-5 h-5" /> },
     { label: "AI Model", value: "Gemini Pro", icon: <Brain className="w-5 h-5" /> },
                 { label: "Accuracy", value: "75-115% Improved", icon: <Target className="w-5 h-5" /> },
     { label: "Response Time", value: "<2s", icon: <Clock className="w-5 h-5" /> }
@@ -339,7 +339,7 @@ function App() {
             </h1>
           </div>
           <p className="text-xl md:text-2xl opacity-90 font-light mb-4">
-            Enhanced AI-powered legal assistant with 57+ IPC sections & 75-115% improved accuracy
+            Enhanced AI-powered legal assistant with 83 IPC sections & 75-115% improved accuracy
           </p>
                       <div className="flex justify-center items-center gap-6 text-sm opacity-80">
               <div className="flex items-center gap-2">
@@ -348,7 +348,7 @@ function App() {
               </div>
               <div className="flex items-center gap-2">
                 <Globe className="w-4 h-4 text-blue-300" />
-                <span>57+ IPC Sections</span>
+                <span>83 IPC Sections</span>
               </div>
               <div className="flex items-center gap-2">
                 <Lock className="w-4 h-4 text-green-300" />
@@ -575,7 +575,7 @@ function App() {
               </div>
               <div>
                 <h2 className="text-xl font-semibold">Enhanced Legal Assistant</h2>
-                <p className="text-sm opacity-90">Powered by Gemini AI • 57+ IPC Sections</p>
+                <p className="text-sm opacity-90">Powered by Gemini AI • 83 IPC Sections</p>
               </div>
             </div>
 
@@ -729,7 +729,7 @@ function App() {
               <span className="text-sm">Real-time</span>
             </div>
           </div>
-          <p className="text-sm">&copy; 2024 Enhanced IPC Crime Analyzer. Powered by Gemini AI • 57+ IPC Sections • 75-115% Improved Accuracy. This tool provides general legal information and should not be considered as legal advice.</p>
+          <p className="text-sm">&copy; 2024 Enhanced IPC Crime Analyzer. Powered by Gemini AI • 83 IPC Sections • 75-115% Improved Accuracy. This tool provides general legal information and should not be considered as legal advice.</p>
         </div>
       </div>
     </div>
