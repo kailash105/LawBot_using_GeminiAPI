@@ -1,0 +1,449 @@
+{
+  "individual_results": [
+    {
+      "query": "Someone stole my phone",
+      "expected_sections": [
+        "379"
+      ],
+      "predicted_sections": [
+        "406",
+        "503",
+        "379",
+        "384"
+      ],
+      "precision": 0.25,
+      "recall": 1.0,
+      "f1_score": 0.4,
+      "accuracy": 0,
+      "avg_confidence": 0.4584969124442808,
+      "true_positives": 1,
+      "false_positives": 3,
+      "false_negatives": 0,
+      "category": "theft",
+      "description": "Basic theft case"
+    },
+    {
+      "query": "A person hit me with a stick during an argument",
+      "expected_sections": [
+        "323",
+        "324"
+      ],
+      "predicted_sections": [
+        "384",
+        "392",
+        "435",
+        "323",
+        "454"
+      ],
+      "precision": 0.2,
+      "recall": 0.5,
+      "f1_score": 0.28571428571428575,
+      "accuracy": 0,
+      "avg_confidence": 0.2882767357955328,
+      "true_positives": 1,
+      "false_positives": 4,
+      "false_negatives": 1,
+      "category": "assault",
+      "description": "Assault with weapon"
+    },
+    {
+      "query": "Someone threatened me with a knife",
+      "expected_sections": [
+        "307",
+        "324"
+      ],
+      "predicted_sections": [
+        "415",
+        "503",
+        "384",
+        "506",
+        "379"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "accuracy": 0,
+      "avg_confidence": 0.496032367217712,
+      "true_positives": 0,
+      "false_positives": 5,
+      "false_negatives": 2,
+      "category": "assault",
+      "description": "Assault with dangerous weapon"
+    },
+    {
+      "query": "A person broke into my house and stole my laptop",
+      "expected_sections": [
+        "380",
+        "379"
+      ],
+      "predicted_sections": [
+        "384",
+        "448",
+        "435",
+        "379",
+        "380"
+      ],
+      "precision": 0.4,
+      "recall": 1.0,
+      "f1_score": 0.5714285714285715,
+      "accuracy": 0,
+      "avg_confidence": 0.29493511251614624,
+      "true_positives": 2,
+      "false_positives": 3,
+      "false_negatives": 0,
+      "category": "burglary",
+      "description": "House burglary with theft"
+    },
+    {
+      "query": "Someone posted my private photos online without permission",
+      "expected_sections": [
+        "354",
+        "500"
+      ],
+      "predicted_sections": [
+        "503",
+        "384",
+        "448",
+        "435",
+        "379"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "accuracy": 0,
+      "avg_confidence": 0.10963057714958505,
+      "true_positives": 0,
+      "false_positives": 5,
+      "false_negatives": 2,
+      "category": "cyber_crime",
+      "description": "Cyber harassment and defamation"
+    },
+    {
+      "query": "My neighbor killed my dog",
+      "expected_sections": [
+        "429"
+      ],
+      "predicted_sections": [
+        "302"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "accuracy": 0,
+      "avg_confidence": 1.1967032967032967,
+      "true_positives": 0,
+      "false_positives": 1,
+      "false_negatives": 1,
+      "category": "animal_cruelty",
+      "description": "Animal cruelty case"
+    },
+    {
+      "query": "Someone demanded money from me by threatening to harm my family",
+      "expected_sections": [
+        "506",
+        "384"
+      ],
+      "predicted_sections": [
+        "415",
+        "425",
+        "406",
+        "503",
+        "384"
+      ],
+      "precision": 0.2,
+      "recall": 0.5,
+      "f1_score": 0.28571428571428575,
+      "accuracy": 0,
+      "avg_confidence": 0.31780054807074853,
+      "true_positives": 1,
+      "false_positives": 4,
+      "false_negatives": 1,
+      "category": "extortion",
+      "description": "Extortion with threats"
+    },
+    {
+      "query": "A group of people robbed me at gunpoint",
+      "expected_sections": [
+        "392",
+        "395"
+      ],
+      "predicted_sections": [
+        "392",
+        "395",
+        "382",
+        "379"
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1_score": 0.6666666666666666,
+      "accuracy": 0,
+      "avg_confidence": 0.4001527913506135,
+      "true_positives": 2,
+      "false_positives": 2,
+      "false_negatives": 0,
+      "category": "robbery",
+      "description": "Armed gang robbery"
+    },
+    {
+      "query": "Someone sexually assaulted me",
+      "expected_sections": [
+        "376"
+      ],
+      "predicted_sections": [
+        "509",
+        "324",
+        "323",
+        "376",
+        "354"
+      ],
+      "precision": 0.2,
+      "recall": 1.0,
+      "f1_score": 0.33333333333333337,
+      "accuracy": 0,
+      "avg_confidence": 0.5856875831755627,
+      "true_positives": 1,
+      "false_positives": 4,
+      "false_negatives": 0,
+      "category": "sexual_assault",
+      "description": "Rape case"
+    },
+    {
+      "query": "My employee stole money from the company",
+      "expected_sections": [
+        "406"
+      ],
+      "predicted_sections": [
+        "415",
+        "406",
+        "384",
+        "324",
+        "379"
+      ],
+      "precision": 0.2,
+      "recall": 1.0,
+      "f1_score": 0.33333333333333337,
+      "accuracy": 0,
+      "avg_confidence": 0.2971031070262113,
+      "true_positives": 1,
+      "false_positives": 4,
+      "false_negatives": 0,
+      "category": "white_collar",
+      "description": "Criminal breach of trust"
+    },
+    {
+      "query": "Someone tried to kill me but I survived",
+      "expected_sections": [
+        "307"
+      ],
+      "predicted_sections": [
+        "302",
+        "406",
+        "503",
+        "379",
+        "307"
+      ],
+      "precision": 0.2,
+      "recall": 1.0,
+      "f1_score": 0.33333333333333337,
+      "accuracy": 0,
+      "avg_confidence": 0.3848267288267288,
+      "true_positives": 1,
+      "false_positives": 4,
+      "false_negatives": 0,
+      "category": "attempted_murder",
+      "description": "Attempted murder"
+    },
+    {
+      "query": "A person molested me in a crowded bus",
+      "expected_sections": [
+        "354"
+      ],
+      "predicted_sections": [
+        "415",
+        "503"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "accuracy": 0,
+      "avg_confidence": 0.3611258071649445,
+      "true_positives": 0,
+      "false_positives": 2,
+      "false_negatives": 1,
+      "category": "molestation",
+      "description": "Sexual harassment/molestation"
+    },
+    {
+      "query": "Someone spread false rumors about me",
+      "expected_sections": [
+        "500"
+      ],
+      "predicted_sections": [
+        "415",
+        "302",
+        "503",
+        "499",
+        "379"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "accuracy": 0,
+      "avg_confidence": 0.11313816787500997,
+      "true_positives": 0,
+      "false_positives": 5,
+      "false_negatives": 1,
+      "category": "defamation",
+      "description": "Defamation case"
+    },
+    {
+      "query": "My business partner embezzled company funds",
+      "expected_sections": [
+        "406"
+      ],
+      "predicted_sections": [
+        "415",
+        "406",
+        "499",
+        "323"
+      ],
+      "precision": 0.25,
+      "recall": 1.0,
+      "f1_score": 0.4,
+      "accuracy": 0,
+      "avg_confidence": 0.17151979565772668,
+      "true_positives": 1,
+      "false_positives": 3,
+      "false_negatives": 0,
+      "category": "white_collar",
+      "description": "Embezzlement"
+    },
+    {
+      "query": "Someone kidnapped my child",
+      "expected_sections": [
+        "363"
+      ],
+      "predicted_sections": [
+        "302",
+        "406",
+        "503",
+        "384",
+        "379"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "accuracy": 0,
+      "avg_confidence": 0.19658896658896657,
+      "true_positives": 0,
+      "false_positives": 5,
+      "false_negatives": 1,
+      "category": "kidnapping",
+      "description": "Kidnapping case"
+    }
+  ],
+  "overall_metrics": {
+    "total_cases": 15,
+    "micro_precision": 0.16923076923076924,
+    "micro_recall": 0.5238095238095238,
+    "micro_f1": 0.2558139534883721,
+    "macro_precision": 0.16,
+    "macro_recall": 0.5333333333333333,
+    "macro_f1": 0.24063492063492067,
+    "overall_accuracy": 0.0,
+    "avg_confidence": 0.37813456650420435
+  },
+  "category_metrics": {
+    "theft": {
+      "count": 1,
+      "avg_precision": 0.25,
+      "avg_recall": 1.0,
+      "avg_f1": 0.4,
+      "avg_accuracy": 0.0
+    },
+    "assault": {
+      "count": 2,
+      "avg_precision": 0.1,
+      "avg_recall": 0.25,
+      "avg_f1": 0.14285714285714288,
+      "avg_accuracy": 0.0
+    },
+    "burglary": {
+      "count": 1,
+      "avg_precision": 0.4,
+      "avg_recall": 1.0,
+      "avg_f1": 0.5714285714285715,
+      "avg_accuracy": 0.0
+    },
+    "cyber_crime": {
+      "count": 1,
+      "avg_precision": 0.0,
+      "avg_recall": 0.0,
+      "avg_f1": 0.0,
+      "avg_accuracy": 0.0
+    },
+    "animal_cruelty": {
+      "count": 1,
+      "avg_precision": 0.0,
+      "avg_recall": 0.0,
+      "avg_f1": 0.0,
+      "avg_accuracy": 0.0
+    },
+    "extortion": {
+      "count": 1,
+      "avg_precision": 0.2,
+      "avg_recall": 0.5,
+      "avg_f1": 0.28571428571428575,
+      "avg_accuracy": 0.0
+    },
+    "robbery": {
+      "count": 1,
+      "avg_precision": 0.5,
+      "avg_recall": 1.0,
+      "avg_f1": 0.6666666666666666,
+      "avg_accuracy": 0.0
+    },
+    "sexual_assault": {
+      "count": 1,
+      "avg_precision": 0.2,
+      "avg_recall": 1.0,
+      "avg_f1": 0.33333333333333337,
+      "avg_accuracy": 0.0
+    },
+    "white_collar": {
+      "count": 2,
+      "avg_precision": 0.225,
+      "avg_recall": 1.0,
+      "avg_f1": 0.3666666666666667,
+      "avg_accuracy": 0.0
+    },
+    "attempted_murder": {
+      "count": 1,
+      "avg_precision": 0.2,
+      "avg_recall": 1.0,
+      "avg_f1": 0.33333333333333337,
+      "avg_accuracy": 0.0
+    },
+    "molestation": {
+      "count": 1,
+      "avg_precision": 0.0,
+      "avg_recall": 0.0,
+      "avg_f1": 0.0,
+      "avg_accuracy": 0.0
+    },
+    "defamation": {
+      "count": 1,
+      "avg_precision": 0.0,
+      "avg_recall": 0.0,
+      "avg_f1": 0.0,
+      "avg_accuracy": 0.0
+    },
+    "kidnapping": {
+      "count": 1,
+      "avg_precision": 0.0,
+      "avg_recall": 0.0,
+      "avg_f1": 0.0,
+      "avg_accuracy": 0.0
+    }
+  }
+}
