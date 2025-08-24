@@ -15,11 +15,25 @@
       "punishment": "Imprisonment for life or up to 10 years with fine"
     },
     {
+      "section_number": "304A",
+      "title": "Death by Negligence",
+      "keywords": ["negligent death", "accidental death", "careless driving death", "medical negligence death", "road accident death"],
+      "description": "Whoever causes the death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both.",
+      "punishment": "Imprisonment up to 2 years or fine or both"
+    },
+    {
       "section_number": "307",
       "title": "Attempt to Murder",
       "keywords": ["attempt murder", "tried to kill", "attack with intent to kill", "shooting attempt", "stabbing attempt"],
       "description": "Whoever does any act with such intention or knowledge, and under such circumstances that, if he by that act caused death, he would be guilty of murder, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
       "punishment": "Imprisonment up to 10 years with fine"
+    },
+    {
+      "section_number": "308",
+      "title": "Attempt to Commit Culpable Homicide",
+      "keywords": ["attempt manslaughter", "tried to cause death", "reckless attempt", "negligent attempt death"],
+      "description": "Whoever does any act with such intention or knowledge and under such circumstances that, if he by that act caused death, he would be guilty of culpable homicide not amounting to murder, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.",
+      "punishment": "Imprisonment up to 3 years or fine or both"
     },
     {
       "section_number": "323",
@@ -36,11 +50,67 @@
       "punishment": "Imprisonment up to 3 years or fine or both"
     },
     {
+      "section_number": "325",
+      "title": "Voluntarily Causing Grievous Hurt",
+      "keywords": ["grievous hurt", "serious injury", "severe assault", "major injury", "serious bodily harm"],
+      "description": "Whoever, except in the case provided for by section 335, voluntarily causes grievous hurt, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+      "punishment": "Imprisonment up to 7 years with fine"
+    },
+    {
+      "section_number": "326",
+      "title": "Voluntarily Causing Grievous Hurt by Dangerous Weapons",
+      "keywords": ["grievous hurt weapon", "serious injury weapon", "dangerous weapon grievous", "acid attack", "acid throwing"],
+      "description": "Whoever, except in the case provided for by section 335, voluntarily causes grievous hurt by means of any instrument for shooting, stabbing or cutting, or any instrument which, used as a weapon of offence, is likely to cause death, or by means of fire or any heated substance, or by means of any poison or any corrosive substance, or by means of any explosive substance, or by means of any substance which it is deleterious to the human body to inhale, to swallow, or to receive into the blood, or by means of any animal, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
+      "punishment": "Imprisonment for life or up to 10 years with fine"
+    },
+    {
+      "section_number": "341",
+      "title": "Wrongful Restraint",
+      "keywords": ["wrongful restraint", "illegal confinement", "unlawful restraint", "preventing movement", "blocking path"],
+      "description": "Whoever voluntarily obstructs any person so as to prevent that person from proceeding in any direction in which that person has a right to proceed, is said wrongfully to restrain that person.",
+      "punishment": "Simple imprisonment up to 1 month or fine up to ₹500 or both"
+    },
+    {
+      "section_number": "342",
+      "title": "Wrongful Confinement",
+      "keywords": ["wrongful confinement", "illegal imprisonment", "unlawful confinement", "kidnapping", "abduction"],
+      "description": "Whoever wrongfully confines any person shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to one thousand rupees, or with both.",
+      "punishment": "Imprisonment up to 1 year or fine up to ₹1000 or both"
+    },
+    {
       "section_number": "354",
       "title": "Assault or Criminal Force to Woman with Intent to Outrage her Modesty",
       "keywords": ["molestation", "eve teasing", "sexual harassment", "outraging modesty", "indecent assault", "woman assault"],
       "description": "Whoever assaults or uses criminal force to any woman, intending to outrage or knowing it to be likely that he will thereby outrage her modesty, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both.",
       "punishment": "Imprisonment up to 2 years or fine or both"
+    },
+    {
+      "section_number": "363",
+      "title": "Kidnapping",
+      "keywords": ["kidnapping", "abduction", "kidnap", "abduct", "forcible taking", "illegal confinement"],
+      "description": "Whoever kidnaps any person from India or from lawful guardianship, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+      "punishment": "Imprisonment up to 7 years with fine"
+    },
+    {
+      "section_number": "365",
+      "title": "Kidnapping or Abducting with Intent to Secretly and Wrongfully Confine Person",
+      "keywords": ["kidnapping confinement", "abduction confinement", "secret confinement", "hidden confinement", "illegal detention"],
+      "description": "Whoever kidnaps or abducts any person with intent to cause that person to be secretly and wrongfully confined, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+      "punishment": "Imprisonment up to 7 years with fine"
+    },
+    {
+      "section_number": "366",
+      "title": "Kidnapping, Abducting or Inducing Woman to Compel her Marriage",
+      "keywords": ["forced marriage", "compel marriage", "kidnap for marriage", "abduct for marriage", "forced wedding"],
+      "description": "Whoever kidnaps or abducts any woman with intent that she may be compelled, or knowing it to be likely that she will be compelled, to marry any person against her will, or in order that she may be forced or seduced to illicit intercourse, or knowing it to be likely that she will be forced or seduced to illicit intercourse, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
+      "punishment": "Imprisonment up to 10 years with fine"
+    },
+    {
+      "section_number": "367",
+      "title": "Kidnapping or Abducting in Order to Subject Person to Grievous Hurt",
+      "keywords": ["kidnap for torture", "abduct for torture", "kidnap for grievous hurt", "abduct for injury", "kidnap for assault"],
+      "description": "Whoever kidnaps or abducts any person in order that such person may be subjected, or may be so disposed of as to be put in danger of being subjected to grievous hurt, or slavery, or to the unnatural lust of any person, or knowing it to be likely that such person will be so subjected or disposed of, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
+      "punishment": "Imprisonment up to 10 years with fine"
     },
     {
       "section_number": "376",
@@ -50,9 +120,58 @@
       "punishment": "Rigorous imprisonment for minimum 10 years up to life with fine"
     },
     {
-      "section_number": "379",
+      "section_number": "376A",
+      "title": "Intercourse by a Man with his Wife during Separation",
+      "keywords": ["marital rape", "wife rape", "forced sex wife", "sexual assault wife", "marital sexual violence"],
+      "description": "Whoever has sexual intercourse with his own wife, who is living separately from him under a decree of separation or under any custom or usage without her consent, shall be punished with imprisonment of either description for a term which may extend to two years and shall also be liable to fine.",
+      "punishment": "Imprisonment up to 2 years with fine"
+    },
+    {
+      "section_number": "376B",
+      "title": "Intercourse by Public Servant with Woman in his Custody",
+      "keywords": ["custodial rape", "public servant rape", "official rape", "custody rape", "authority rape"],
+      "description": "Whoever, being a public servant, takes advantage of his official position and induces or seduces any woman, who is in his custody as such public servant or in the custody of a public servant subordinate to him, to have sexual intercourse with him, such sexual intercourse not amounting to the offence of rape, shall be punished with imprisonment of either description for a term which may extend to five years and shall also be liable to fine.",
+      "punishment": "Imprisonment up to 5 years with fine"
+    },
+    {
+      "section_number": "376C",
+      "title": "Intercourse by Superintendent of Jail, Remand Home, etc.",
+      "keywords": ["jail superintendent rape", "remand home rape", "custodial sexual assault", "prison rape", "detention rape"],
+      "description": "Whoever, being the superintendent or manager of a jail, remand home or other place of custody established by or under any law for the time being in force or of a women's or children's institution takes advantage of his official position and induces or seduces any female inmate of such jail, remand home, place or institution to have sexual intercourse with him, such sexual intercourse not amounting to the offence of rape, shall be punished with imprisonment of either description for a term which may extend to five years and shall also be liable to fine.",
+      "punishment": "Imprisonment up to 5 years with fine"
+    },
+    {
+      "section_number": "376D",
+      "title": "Gang Rape",
+      "keywords": ["gang rape", "group rape", "multiple rapists", "collective rape", "group sexual assault"],
+      "description": "Where a woman is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to life which shall mean imprisonment for the remainder of that person's natural life, and with fine.",
+      "punishment": "Rigorous imprisonment for minimum 20 years up to life with fine"
+    },
+    {
+      "section_number": "376E",
+      "title": "Punishment for Repeat Offenders of Rape",
+      "keywords": ["repeat rape", "second time rape", "habitual rapist", "repeat sexual offender", "multiple rape convictions"],
+      "description": "Whoever has been previously convicted of an offence punishable under section 376 or section 376A or section 376AB or section 376B or section 376C or section 376D and is subsequently convicted of an offence punishable under any of the said sections shall be punished with imprisonment for life which shall mean imprisonment for the remainder of that person's natural life, or with death.",
+      "punishment": "Imprisonment for life or death penalty"
+    },
+    {
+      "section_number": "377",
+      "title": "Unnatural Offences",
+      "keywords": ["unnatural offence", "sodomy", "buggery", "unnatural sex", "carnal intercourse"],
+      "description": "Whoever voluntarily has carnal intercourse against the order of nature with any man, woman or animal, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
+      "punishment": "Imprisonment for life or up to 10 years with fine"
+    },
+    {
+      "section_number": "378",
       "title": "Theft",
       "keywords": ["theft", "steal", "stolen", "robbery", "pickpocket", "burglary", "larceny", "thief", "stole my", "took my"],
+      "description": "Whoever, intending to take dishonestly any moveable property out of the possession of any person without that person's consent, moves that property in order to such taking, is said to commit theft.",
+      "punishment": "Definition section - no punishment specified"
+    },
+    {
+      "section_number": "379",
+      "title": "Punishment for Theft",
+      "keywords": ["theft punishment", "stealing punishment", "larceny punishment"],
       "description": "Whoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.",
       "punishment": "Imprisonment up to 3 years or fine or both"
     },
@@ -71,25 +190,53 @@
       "punishment": "Rigorous imprisonment up to 10 years with fine"
     },
     {
-      "section_number": "384",
+      "section_number": "383",
       "title": "Extortion",
       "keywords": ["extortion", "blackmail", "threat for money", "demand money", "coercion", "threaten for money"],
       "description": "Whoever intentionally puts any person in fear of any injury to that person or to any other, and thereby dishonestly induces the person so put in fear to deliver to any person any property or valuable security, or anything signed or sealed which may be converted into a valuable security, commits 'extortion'.",
+      "punishment": "Definition section - no punishment specified"
+    },
+    {
+      "section_number": "384",
+      "title": "Punishment for Extortion",
+      "keywords": ["extortion punishment", "blackmail punishment", "coercion punishment"],
+      "description": "Whoever commits extortion shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.",
       "punishment": "Imprisonment up to 3 years or fine or both"
     },
     {
-      "section_number": "392",
+      "section_number": "390",
       "title": "Robbery",
       "keywords": ["robbery", "armed robbery", "highway robbery", "mugging", "snatching", "forceful theft"],
+      "description": "In all robbery there is either theft or extortion. When theft is robbery - Theft is 'robbery' if, in order to the committing of the theft, or in committing the theft, or in carrying away or attempting to carry away property obtained by the theft, the offender, for that end, voluntarily causes or attempts to cause to any person death or hurt or wrongful restraint, or fear of instant death or of instant hurt, or of instant wrongful restraint.",
+      "punishment": "Definition section - no punishment specified"
+    },
+    {
+      "section_number": "392",
+      "title": "Punishment for Robbery",
+      "keywords": ["robbery punishment", "armed robbery punishment", "highway robbery punishment"],
       "description": "Whoever commits robbery shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine; and, if the robbery be committed on the highway between sunset and sunrise, the imprisonment may be extended to fourteen years.",
       "punishment": "Rigorous imprisonment up to 10 years (14 years if on highway at night) with fine"
     },
     {
-      "section_number": "395",
+      "section_number": "391",
       "title": "Dacoity",
       "keywords": ["dacoity", "gang robbery", "group robbery", "armed gang", "multiple robbers"],
+      "description": "When five or more persons conjointly commit or attempt to commit a robbery, or where the whole number of persons conjointly committing or attempting to commit a robbery, and persons present and aiding such commission or attempt, amount to five or more, every person so committing, attempting or aiding, is said to commit 'dacoity'.",
+      "punishment": "Definition section - no punishment specified"
+    },
+    {
+      "section_number": "395",
+      "title": "Punishment for Dacoity",
+      "keywords": ["dacoity punishment", "gang robbery punishment", "group robbery punishment"],
       "description": "Whoever commits dacoity shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
       "punishment": "Imprisonment for life or rigorous imprisonment up to 10 years with fine"
+    },
+    {
+      "section_number": "403",
+      "title": "Dishonest Misappropriation of Property",
+      "keywords": ["misappropriation", "dishonest misappropriation", "property misappropriation", "unauthorized use", "wrongful use"],
+      "description": "Whoever dishonestly misappropriates or converts to his own use any moveable property, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both.",
+      "punishment": "Imprisonment up to 2 years or fine or both"
     },
     {
       "section_number": "406",
@@ -99,11 +246,39 @@
       "punishment": "Imprisonment up to 3 years or fine or both"
     },
     {
+      "section_number": "409",
+      "title": "Criminal Breach of Trust by Public Servant",
+      "keywords": ["public servant breach of trust", "official embezzlement", "government misappropriation", "public fund embezzlement"],
+      "description": "Whoever, being in any manner entrusted with property, or with any dominion over property in his capacity of a public servant or in the way of his business as a banker, merchant, factor, broker, attorney or agent, commits criminal breach of trust in respect of that property, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
+      "punishment": "Imprisonment for life or up to 10 years with fine"
+    },
+    {
+      "section_number": "411",
+      "title": "Receiving Stolen Property",
+      "keywords": ["receiving stolen property", "possession of stolen goods", "handling stolen goods", "stolen property", "receiving stolen"],
+      "description": "Whoever dishonestly receives or retains any stolen property, knowing or having reason to believe the same to be stolen property, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.",
+      "punishment": "Imprisonment up to 3 years or fine or both"
+    },
+    {
+      "section_number": "414",
+      "title": "Assisting in Concealment of Stolen Property",
+      "keywords": ["concealing stolen property", "hiding stolen goods", "assisting theft", "aiding theft", "concealment of stolen"],
+      "description": "Whoever voluntarily assists in concealing or disposing of or making away with property which he knows or has reason to believe to be stolen property, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.",
+      "punishment": "Imprisonment up to 3 years or fine or both"
+    },
+    {
       "section_number": "415",
       "title": "Cheating",
       "keywords": ["cheating", "fraud", "deception", "false pretence", "scam", "con", "swindle"],
       "description": "Whoever, by deceiving any person, fraudulently or dishonestly induces the person so deceived to deliver any property to any person, or to consent that any person shall retain any property, or intentionally induces the person so deceived to do or omit to do anything which he would not do or omit if he were not so deceived, and which act or omission causes or is likely to cause damage or harm to that person in body, mind, reputation or property, is said to 'cheat'.",
-      "punishment": "Imprisonment up to 1 year or fine or both"
+      "punishment": "Definition section - no punishment specified"
+    },
+    {
+      "section_number": "416",
+      "title": "Cheating by Personation",
+      "keywords": ["personation", "impersonation", "false identity", "fake identity", "pretending to be someone"],
+      "description": "A person is said to 'cheat by personation' if he cheats by pretending to be some other person, or by knowingly substituting one person for another, or representing that he or any other person is a person other than he or such other person really is.",
+      "punishment": "Definition section - no punishment specified"
     },
     {
       "section_number": "417",
@@ -113,11 +288,53 @@
       "punishment": "Imprisonment up to 1 year or fine or both"
     },
     {
+      "section_number": "418",
+      "title": "Cheating with Knowledge that Wrongful Loss may Ensue",
+      "keywords": ["cheating with knowledge", "fraudulent cheating", "intentional cheating", "knowing fraud"],
+      "description": "Whoever cheats with the knowledge that he is likely thereby to cause wrongful loss to a person whose interest in the transaction to which the cheating relates, he was bound, either by law, or by a legal contract, to protect, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.",
+      "punishment": "Imprisonment up to 3 years or fine or both"
+    },
+    {
+      "section_number": "419",
+      "title": "Punishment for Cheating by Personation",
+      "keywords": ["personation punishment", "impersonation punishment", "false identity punishment"],
+      "description": "Whoever cheats by personation shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.",
+      "punishment": "Imprisonment up to 3 years or fine or both"
+    },
+    {
       "section_number": "420",
       "title": "Cheating and Dishonestly Inducing Delivery of Property",
       "keywords": ["cheating for property", "fraud for money", "deception for property", "financial fraud"],
       "description": "Whoever cheats and thereby dishonestly induces the person deceived to deliver any property to any person, or to make, alter or destroy the whole or any part of a valuable security, or anything which is signed or sealed, and which is capable of being converted into a valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
       "punishment": "Imprisonment up to 7 years with fine"
+    },
+    {
+      "section_number": "421",
+      "title": "Dishonest or Fraudulent Removal or Concealment of Property",
+      "keywords": ["fraudulent removal", "concealment of property", "hiding property", "fraudulent concealment"],
+      "description": "Whoever dishonestly or fraudulently removes, conceals or delivers to any person, or transfers or causes to be transferred to any person, without adequate consideration, any property, intending thereby to prevent, or knowing it to be likely that he will thereby prevent, the distribution of that property according to law among his creditors or the creditors of any other person, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both.",
+      "punishment": "Imprisonment up to 2 years or fine or both"
+    },
+    {
+      "section_number": "422",
+      "title": "Dishonestly or Fraudulently Preventing Debt being Available for Creditors",
+      "keywords": ["preventing debt", "fraudulent debt", "creditor fraud", "debt concealment"],
+      "description": "Whoever dishonestly or fraudulently prevents any debt or demand due to himself or to any other person from being made available according to law for payment of his debts or the debts of such other person, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both.",
+      "punishment": "Imprisonment up to 2 years or fine or both"
+    },
+    {
+      "section_number": "423",
+      "title": "Dishonest or Fraudulent Execution of Deed of Transfer",
+      "keywords": ["fraudulent deed", "fraudulent transfer", "dishonest transfer", "fraudulent execution"],
+      "description": "Whoever dishonestly or fraudulently signs, executes or becomes a party to any deed or instrument which purports to transfer or subject to any charge any property, or any interest therein, and which contains any false statement relating to the consideration for such transfer or charge, or relating to the person or persons for whose use or benefit it is really intended to operate, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both.",
+      "punishment": "Imprisonment up to 2 years or fine or both"
+    },
+    {
+      "section_number": "424",
+      "title": "Dishonest or Fraudulent Removal or Concealment of Property",
+      "keywords": ["fraudulent removal", "concealment of property", "hiding property", "fraudulent concealment"],
+      "description": "Whoever dishonestly or fraudulently conceals or removes any property of himself or any other person, or dishonestly or fraudulently assists in the concealment or removal thereof, or dishonestly releases any demand or claim to which he is entitled, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both.",
+      "punishment": "Imprisonment up to 2 years or fine or both"
     },
     {
       "section_number": "425",
@@ -141,6 +358,55 @@
       "punishment": "Imprisonment up to 2 years or fine or both"
     },
     {
+      "section_number": "428",
+      "title": "Mischief by Killing or Maiming Animal",
+      "keywords": ["killing animal", "maiming animal", "animal cruelty", "animal harm", "pet killing"],
+      "description": "Whoever commits mischief by killing, poisoning, maiming or rendering useless any animal or animals of the value of ten rupees or upwards, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both.",
+      "punishment": "Imprisonment up to 2 years or fine or both"
+    },
+    {
+      "section_number": "429",
+      "title": "Mischief by Killing or Maiming Cattle",
+      "keywords": ["killing cattle", "maiming cattle", "cattle cruelty", "livestock harm", "farm animal killing"],
+      "description": "Whoever commits mischief by killing, poisoning, maiming or rendering useless any elephant, camel, horse, mule, buffalo, bull, cow or ox, whatever may be the value thereof, or any other animal of the value of fifty rupees or upwards, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both.",
+      "punishment": "Imprisonment up to 5 years or fine or both"
+    },
+    {
+      "section_number": "430",
+      "title": "Mischief by Injury to Works of Irrigation",
+      "keywords": ["irrigation damage", "water works damage", "canal damage", "irrigation mischief", "water system damage"],
+      "description": "Whoever commits mischief by doing any act which causes, or which he knows to be likely to cause, a diminution of the supply of water for agricultural purposes, or for food or drink for human beings or for animals which are property, or for cleanliness or for carrying on any manufacture, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both.",
+      "punishment": "Imprisonment up to 5 years or fine or both"
+    },
+    {
+      "section_number": "431",
+      "title": "Mischief by Injury to Public Road, Bridge, River or Channel",
+      "keywords": ["road damage", "bridge damage", "river damage", "public infrastructure damage", "transport damage"],
+      "description": "Whoever commits mischief by doing any act which renders or which he knows to be likely to render any public road, bridge, navigable river or navigable channel, natural or artificial, impassable or less safe for travelling or conveying property, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both.",
+      "punishment": "Imprisonment up to 5 years or fine or both"
+    },
+    {
+      "section_number": "432",
+      "title": "Mischief by Causing Inundation or Obstruction to Public Drain",
+      "keywords": ["inundation", "flooding", "drain obstruction", "water logging", "public drain damage"],
+      "description": "Whoever commits mischief by doing any act which causes or which he knows to be likely to cause an inundation or an obstruction to any public drainage, or diminishes or lessens the supply of water for agricultural purposes, or for food or drink for human beings or for animals which are property, or for cleanliness or for carrying on any manufacture, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both.",
+      "punishment": "Imprisonment up to 5 years or fine or both"
+    },
+    {
+      "section_number": "433",
+      "title": "Mischief by Destroying, Moving or Rendering Less Useful a Light-House or Sea-Mark",
+      "keywords": ["lighthouse damage", "sea mark damage", "navigation aid damage", "maritime mischief", "coastal damage"],
+      "description": "Whoever commits mischief by destroying or moving any light-house or other light used as a sea-mark, or any sea-mark or buoy or other thing placed as a guide for navigators, or by any act which renders any such light-house, sea-mark, buoy or other such thing as aforesaid less useful as a guide for navigators, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.",
+      "punishment": "Imprisonment up to 7 years or fine or both"
+    },
+    {
+      "section_number": "434",
+      "title": "Mischief by Destroying or Moving, etc., a Land-Mark Fixed by Public Authority",
+      "keywords": ["landmark damage", "boundary mark damage", "survey mark damage", "public mark damage", "boundary mischief"],
+      "description": "Whoever commits mischief by destroying or moving any land-mark fixed by the authority of a public servant, or by any act which renders such land-mark less useful as such, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine, or with both.",
+      "punishment": "Imprisonment up to 1 year or fine or both"
+    },
+    {
       "section_number": "435",
       "title": "Mischief by Fire or Explosive Substance",
       "keywords": ["arson", "fire damage", "explosion", "bomb", "fire setting", "explosive damage"],
@@ -148,32 +414,123 @@
       "punishment": "Imprisonment up to 7 years with fine"
     },
     {
-      "section_number": "447",
+      "section_number": "436",
+      "title": "Mischief by Fire or Explosive Substance with Intent to Destroy House",
+      "keywords": ["arson house", "house burning", "fire house destruction", "explosive house damage", "house arson"],
+      "description": "Whoever commits mischief by fire or any explosive substance, intending to cause, or knowing it to be likely that he will thereby cause, the destruction of any building which is ordinarily used as a place of worship or as a human dwelling or as a place for the custody of property, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
+      "punishment": "Imprisonment for life or up to 10 years with fine"
+    },
+    {
+      "section_number": "437",
+      "title": "Mischief with Intent to Destroy or Make Unsafe a Decked Vessel",
+      "keywords": ["vessel damage", "ship damage", "boat damage", "maritime vessel damage", "decked vessel mischief"],
+      "description": "Whoever commits mischief to any decked vessel or any vessel of a burden of twenty tons or upwards, intending to destroy or render unsafe, or knowing it to be likely that he will thereby destroy or render unsafe, that vessel, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
+      "punishment": "Imprisonment up to 10 years with fine"
+    },
+    {
+      "section_number": "438",
+      "title": "Punishment for the Mischief Described in Section 437 Committed by Fire or Explosive Substance",
+      "keywords": ["vessel arson", "ship fire", "boat explosion", "maritime arson", "vessel explosive damage"],
+      "description": "Whoever commits, or attempts to commit, by fire or any explosive substance, such mischief as is described in the last preceding section, shall be punished with imprisonment for life, or with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
+      "punishment": "Imprisonment for life or up to 10 years with fine"
+    },
+    {
+      "section_number": "440",
+      "title": "Mischief Committed after Preparation Made for Causing Death or Hurt",
+      "keywords": ["mischief with preparation", "prepared mischief", "intentional mischief", "planned mischief"],
+      "description": "Whoever commits mischief, having made preparation for causing to any person death, or hurt, or wrongful restraint, or fear of death, or of hurt, or of wrongful restraint, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine.",
+      "punishment": "Imprisonment up to 5 years with fine"
+    },
+    {
+      "section_number": "441",
       "title": "Criminal Trespass",
       "keywords": ["trespass", "unauthorized entry", "breaking and entering", "illegal entry", "trespassing"],
       "description": "Whoever enters into or upon property in the possession of another with intent to commit an offence or to intimidate, insult or annoy any person in possession of such property, or having lawfully entered into or upon such property, unlawfully remains there with intent thereby to intimidate, insult or annoy any such person, or with intent to commit an offence, is said to commit 'criminal trespass'.",
+      "punishment": "Definition section - no punishment specified"
+    },
+    {
+      "section_number": "447",
+      "title": "Punishment for Criminal Trespass",
+      "keywords": ["trespass punishment", "unauthorized entry punishment", "illegal entry punishment"],
+      "description": "Whoever commits criminal trespass shall be punished with imprisonment of either description for a term which may extend to three months, or with fine which may extend to five hundred rupees, or with both.",
       "punishment": "Imprisonment up to 3 months or fine up to ₹500 or both"
     },
     {
-      "section_number": "448",
+      "section_number": "442",
       "title": "House-trespass",
       "keywords": ["house trespass", "home invasion", "house breaking", "residential trespass"],
       "description": "Whoever commits criminal trespass by entering into or remaining in any building, tent or vessel used as a human dwelling or any building used as a place for worship, or as a place for the custody of property, is said to commit 'house-trespass'.",
+      "punishment": "Definition section - no punishment specified"
+    },
+    {
+      "section_number": "448",
+      "title": "Punishment for House-trespass",
+      "keywords": ["house trespass punishment", "home invasion punishment", "residential trespass punishment"],
+      "description": "Whoever commits house-trespass shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to one thousand rupees, or with both.",
       "punishment": "Imprisonment up to 1 year or fine up to ₹1000 or both"
     },
     {
-      "section_number": "451",
+      "section_number": "443",
+      "title": "Lurking House-trespass",
+      "keywords": ["lurking", "sneaking", "secret entry", "concealed entry", "hidden trespass"],
+      "description": "Whoever commits house-trespass having taken precautions to conceal such house-trespass from some person who has a right to exclude or eject the trespasser from the building, tent or vessel which is the subject of the trespass, is said to commit 'lurking house-trespass'.",
+      "punishment": "Definition section - no punishment specified"
+    },
+    {
+      "section_number": "444",
+      "title": "Lurking House-trespass by Night",
+      "keywords": ["night trespass", "night lurking", "night house breaking", "night invasion", "night burglary"],
+      "description": "Whoever commits lurking house-trespass after sunset and before sunrise, is said to commit 'lurking house-trespass by night'.",
+      "punishment": "Definition section - no punishment specified"
+    },
+    {
+      "section_number": "445",
+      "title": "House-breaking",
+      "keywords": ["house breaking", "breaking and entering", "house burglary", "residential breaking", "forced entry"],
+      "description": "A person is said to commit 'house-breaking' who commits house-trespass if he effects his entrance into the house or any part of it in any of the six ways hereinafter described; or if, being in the house or any part of it for the purpose of committing an offence, or, having committed an offence therein, he quits the house or any part of it in any of such six ways.",
+      "punishment": "Definition section - no punishment specified"
+    },
+    {
+      "section_number": "446",
+      "title": "House-breaking by Night",
+      "keywords": ["night house breaking", "night burglary", "night breaking and entering", "night forced entry"],
+      "description": "Whoever commits house-breaking after sunset and before sunrise, is said to commit 'house-breaking by night'.",
+      "punishment": "Definition section - no punishment specified"
+    },
+    {
+      "section_number": "449",
       "title": "House-trespass in Order to Commit Offence Punishable with Death",
       "keywords": ["house trespass for murder", "breaking in to kill", "house invasion for crime"],
       "description": "Whoever commits house-trespass in order to the committing of any offence punishable with death, shall be punished with imprisonment for life, or with rigorous imprisonment for a term not exceeding ten years, and shall also be liable to fine.",
       "punishment": "Imprisonment for life or rigorous imprisonment up to 10 years with fine"
     },
     {
-      "section_number": "454",
-      "title": "Lurking House-trespass or House-breaking",
-      "keywords": ["lurking", "sneaking", "secret entry", "concealed entry", "hidden trespass"],
-      "description": "Whoever commits house-trespass having taken precautions to conceal such house-trespass from some person who has a right to exclude or eject the trespasser from the building, tent or vessel which is the subject of the trespass, is said to commit 'lurking house-trespass'.",
+      "section_number": "451",
+      "title": "House-trespass in Order to Commit Offence Punishable with Imprisonment for Life",
+      "keywords": ["house trespass for life imprisonment", "breaking in for serious crime", "house invasion for major offence"],
+      "description": "Whoever commits house-trespass in order to the committing of any offence punishable with imprisonment for life, shall be punished with imprisonment of either description for a term not exceeding ten years, and shall also be liable to fine.",
+      "punishment": "Imprisonment up to 10 years with fine"
+    },
+    {
+      "section_number": "452",
+      "title": "House-trespass after Preparation Made for Causing Death or Hurt",
+      "keywords": ["house trespass with preparation", "prepared house invasion", "intentional house trespass"],
+      "description": "Whoever commits house-trespass, having made preparation for causing hurt to any person or for assaulting any person, or for wrongfully restraining any person, or for putting any person in fear of death or of hurt, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+      "punishment": "Imprisonment up to 7 years with fine"
+    },
+    {
+      "section_number": "453",
+      "title": "Punishment for Lurking House-trespass or House-breaking",
+      "keywords": ["lurking house trespass punishment", "house breaking punishment", "secret entry punishment"],
+      "description": "Whoever commits lurking house-trespass or house-breaking, shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine.",
       "punishment": "Imprisonment up to 2 years or fine or both"
+    },
+    {
+      "section_number": "454",
+      "title": "Lurking House-trespass or House-breaking by Night",
+      "keywords": ["night lurking", "night house breaking", "night burglary", "night secret entry"],
+      "description": "Whoever commits lurking house-trespass or house-breaking by night, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine.",
+      "punishment": "Imprisonment up to 3 years or fine or both"
     },
     {
       "section_number": "499",
